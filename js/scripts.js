@@ -48,3 +48,23 @@ for (let i = 0; i < immagini.length ; i++){
 
     carouselContainer.appendChild(img);
 }
+
+
+
+const nextButton = document.getElementById("button-right");
+const prevButton = document.getElementById("button-left");
+nextButton.addEventListener('click', function() {
+    const images = document.querySelectorAll('.carousel-image');
+    const visibleImage = document.querySelector('.carousel-image.visible');
+    visibleImage.classList.remove('visible');
+    const nextImage = visibleImage.nextElementSibling || images[0];
+    nextImage.classList.add('visible');
+});
+
+prevButton.addEventListener('click', function() {
+    const images = document.querySelectorAll('.carousel-image');
+    const visibleImage = document.querySelector('.carousel-image.visible');
+    visibleImage.classList.remove('visible');
+    const prevImage = visibleImage.previousElementSibling || images[images.length - 1];
+    prevImage.classList.add('visible');
+});

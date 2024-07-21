@@ -8,6 +8,12 @@
 body {
     width: 1000px;
     margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+header{
+    
+    text-align: center;
 }
 
 .container{
@@ -16,36 +22,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-#img-1 {
-   width: 100%;
-    max-height: 400px;
-    height: auto;
-}
-#img-2 {
-    max-width: 100%;
-    height: auto;
-    display: none;
-}
-#img-3 {
-    max-width: 100%;
-    height: auto;
-    display: none;
-}
-#img-4 {
-    max-width: 100%;
-    height: auto;
-    display: none;
-}
-#img-5 {
-    max-width: 100%;
-    height: auto;
-    display: none;
-}
-#img-6 {
-    max-width: 100%;
-    height: auto;
-    display: none;
-}
+
 button {
     border: none;
     margin-left: 5px;
